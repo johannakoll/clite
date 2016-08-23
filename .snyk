@@ -1,0 +1,16 @@
+version: v1.5.0
+ignore:
+  'npm:ws:20160624':
+    - console-io > socket.io > engine.io > ws:
+        reason: None given
+        expires: '2016-09-22T11:40:47.298Z'
+    - console-io > socket.io > socket.io-client > engine.io-client > ws:
+        reason: None given
+        expires: '2016-09-22T11:40:47.298Z'
+patch:
+  'npm:hawk:20160119':
+    - electron-packager > asar > mksnapshot > request > hawk:
+        patched: '2016-08-23T11:40:47.479Z'
+  'npm:request:20160119':
+    - electron-packager > asar > mksnapshot > request:
+        patched: '2016-08-23T11:40:47.479Z'
